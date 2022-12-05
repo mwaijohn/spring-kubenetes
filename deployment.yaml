@@ -14,9 +14,11 @@ spec:
     spec:
       containers:
         - name: spring-boot-k8s
-          image: springboot-k8s-example:1.0
+          image: mwaijohng/springboot-k8s-example:1.0
           # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8089
 # The port that the container is running on in the cluster
+# docker run -d -p 8000:80 mwaijohng/springboot-k8s-example:1.0
+# docker build -t mwaijohng/springboot-k8s-example:1.0 .
